@@ -17,4 +17,15 @@ describe("Satellite", () => {
     );
     expect(satellite.shouldShowWarning()).toBeTruthy();
   });
+
+  it("shouldShowWarning returns FALSE if type !== space debris", () => {
+    let satellite = new Satellite(
+      "My Ride",
+      "not space debris",
+      "a launchdate",
+      "an orbit type",
+      true
+    );
+    expect(satellite.shouldShowWarning()).toBeFalsy();
+  });
 });
