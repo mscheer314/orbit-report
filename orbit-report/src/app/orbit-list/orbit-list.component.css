@@ -1,11 +1,11 @@
 .sortable {
-    /* do not touch */
-    cursor: pointer;
-    color: #dd5;
+  /* do not touch */
+  cursor: pointer;
+  color: #dd5;
 }
 
 .warning {
-    background-color: #da8a8a;
+  background-color: #da8a8a;
 }
 
 table {
@@ -17,13 +17,18 @@ table {
   background: #dad8d8;
 }
 
-.header-row {
-    background: #1a4737;
-    color: #fff
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-th, td {
-    text-align: left;
-    margin: 5px 10px;
-    padding: 6px;
+.header-row {
+  background: #1a4737;
+  color: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  margin: 5px 10px;
+  padding: 6px;
 }
